@@ -21,7 +21,7 @@ export default function Navbar({navBtn, handleMobileMenu}) {
         </ul>
       </div>
       <div className="wallet">
-        <Link to='/login'><button>Get Started</button></Link>
+        <Link to='/signup'><button>Get Started</button></Link>
         <div
           onClick={handleMobileMenu}
           className="mobile-menu"
