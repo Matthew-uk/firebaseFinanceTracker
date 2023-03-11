@@ -12,7 +12,7 @@
   --primary-font: Sansita;
   --primary-background-color: #fff;
   --primary-sidebar-color:#fafafa;
-  --primary-gradient: linear-gradient(1turn, #7344fc, #1b2ae6);
+  --primary-gradient: linear-gradient(300deg, #7344fc 50%, #1b2ae6);
 }
 h1,
 h2,
