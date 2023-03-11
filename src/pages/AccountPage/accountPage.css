@@ -1,0 +1,94 @@
+.account-page-container ,.account-page-wrapper, .account-information-container{
+    display: flex;
+    justify-content: center;
+}
+.account-page-container{
+    padding: 20px 10px;
+    font-family: var(--primary-font);
+}
+.account-page-wrapper{
+    width: 100%;
+}
+.account-information-container{
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+}
+.account-info-box1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 650px; */
+}
+.account-image-container .account-image-icon{
+    font-size: 5rem;
+    color: rgb(99, 98, 98);
+}
+.account-user-info{
+    text-align: center;
+}
+.account-user-info span{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.account-user-info p{
+    color: rgb(126, 124, 124);
+}
+.account-edit-button button{
+    width:90px ;
+    padding:7px 10px;
+    color:#fff ;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+}
+.account-info-box2{
+    /* border: 1px solid lightgray; */
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.account-info-box2 .line{
+    color: rgb(224, 222, 222) ;
+}
+.account-info-box-wrapper{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.account-info-box-head{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.account-delete-container{
+    padding: 20px 10px;
+}
+.account-delete-button{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.account-delete-button button{
+    color: red;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    padding: 5px 6px;
+    transition: all 0.5s ease-in-out;
+}
+.account-delete-button button:hover{
+    color: #fff;
+    background-color: red;
+    transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width:420px) {
+    .account-info-box1{
+        display: flex;
+        flex-direction: column;
+    }
+    .account-info-box1 .account-edit-button{
+        margin-top: 10px;
+    }
+}

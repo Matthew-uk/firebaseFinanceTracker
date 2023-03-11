@@ -1,0 +1,136 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  justify-content: space-between;
+}
+
+.hero > div {
+  width: 50%;
+}
+
+.hero .left {
+  display: flex;
+  padding-block: 3em;
+  flex-direction: column;
+}
+
+.hero .left h2 {
+  font-size: 4em;
+  color: aliceblue;
+  font-weight: 600;
+  padding-inline: 0.5em;
+  letter-spacing: 2px;
+}
+
+.hero .left p {
+  padding-inline: 1.2em;
+  padding-block: 1.4em;
+  color: rgb(205, 202, 198);
+  font-weight: 100;
+  font-size: 1.3em;
+  word-spacing: 0.1em;
+  /* opacity: 0.8; */
+  width: 70%;
+}
+
+.hero .left .buttons {
+  padding-inline: 2em;
+  padding-bottom: 2em;
+}
+
+.hero .left .buttons button {
+  border: none;
+  border-radius: 60px;
+  padding: 1em 1.8em;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 1em;
+  margin-right: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.hero .left .buttons button:nth-child(2) {
+  background: none;
+  color: aliceblue;
+}
+
+.hero .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2.2em;
+  padding-inline: 0.7em;
+}
+
+.hero .right img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive 1029px section */
+
+@media screen and (max-width: 1029px) {
+  .hero .right img {
+    width: 80%;
+    height: 77%;
+  }
+
+  .hero .left h2 {
+    font-size: 3.8em;
+  }
+
+  .hero .left p {
+    font-size: 1.4em;
+  }
+}
+
+/* Responsiveness 920px section */
+
+@media screen and (max-width: 920px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+
+  .hero .left {
+    padding-block: 1em;
+  }
+
+  .hero .left h2 {
+    font-size: 3.4em;
+  }
+
+  .hero .left p {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  .hero .left .buttons {
+    font-size: 0.8em;
+  }
+
+  .hero .right {
+    display: flex;
+  }
+
+  .hero .right img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero .left h2{
+    font-size: 2.5em;
+  }
+
+  .hero .left p{
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,47 @@
+.transaction-history-container, .transaction-history-wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+.transaction-history-wrapper{
+    flex-direction: column;
+    width: 100%;
+    max-width: 980px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    margin-top: 15px;
+}
+.transaction-hsitory-text{
+    padding: 15px;
+}
+.transaction-history-table-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0;
+    /* max-width: 100; */
+}
+.transaction-history-table-container thead, .transaction-history-table-container tbody{
+    display: flex;
+    justify-content: space-between;
+}
+.transaction-history-table-container thead th, .transaction-history-table-container tbody tr{
+    text-align: center;
+    width: 100%;
+}
+.transaction-history-table-container thead{
+    padding: 6px;
+}
+.transaction-history-table-container tbody{
+    padding: 10px;
+    box-shadow: 0 0 10px lightgray;
+    margin-top: 5px;
+}
+.color-green{
+    color: green;
+}
+.currency-place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

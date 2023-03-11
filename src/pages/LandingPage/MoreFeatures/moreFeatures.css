@@ -1,0 +1,24 @@
+.moreFeatures {
+  background-color: #fff;
+  font-family: var(--primary-font);
+}
+
+.moreFeatures .body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.moreFeatures .body div {
+  border-radius: 5px;
+  flex-basis: 30%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .moreFeatures .body div {
+    flex-basis: 100%;
+  }
+}

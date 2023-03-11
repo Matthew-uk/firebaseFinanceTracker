@@ -1,0 +1,7 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(1turn, #7344fc, #1b2ae6);
+  height: max-content;
+  font-family: var(--primary-font);
+}

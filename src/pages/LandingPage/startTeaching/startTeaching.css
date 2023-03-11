@@ -1,0 +1,58 @@
+.startTeaching {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--primary-font);
+  margin-top: 4em;
+}
+
+.startTeaching .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(1turn, #7344fc, #1b2ae6);
+  width: 90%;
+  padding-block: 5em;
+  height: max-content;
+  border-radius: 1em;
+}
+
+.startTeaching .box h3 {
+  color: aliceblue;
+  font-size: 3em;
+}
+
+.startTeaching .box p {
+  color: rgb(130, 130, 129);
+  padding-block: 1.4em;
+  text-align: center;
+  font-size: 1.5em;
+  padding-block: 2em;
+}
+
+.startTeaching .box button {
+  padding: 1em 2.6em;
+  border-radius: 2em;
+  border: none;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 1.3em;
+}
+
+@media screen and (max-width: 760px) {
+  .startTeaching .box h3 {
+    font-size: 1.8em;
+    padding: 0;
+  }
+
+  .startTeaching .box p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .startTeaching .box button {
+    padding: 1.3em 2.6em;
+    font-size: 0.9em;
+  }
+}

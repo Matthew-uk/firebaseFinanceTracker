@@ -1,0 +1,111 @@
+.question-page-container{
+    height: 92vh;
+    padding: 20px;
+    font-family: var(--primary-font);
+}
+.Fun-fact-container, .access-camera-container{
+    display: flex;
+    justify-content: center;
+}
+.Fun-fact-container .fun-fact-wrapper{
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgb(233, 231, 231);
+    padding: 20px;
+    border-radius:20px ;
+    text-align: center;
+}
+.fun-fact-wrapper p{
+    margin-top: 10px;
+}
+.access-camera-container{
+    margin-top: 25%;
+}
+.access-camera-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: lightgray;
+    cursor: pointer;
+}
+.answer-container{
+    display: flex;
+    flex-direction: left;
+    margin-top: 20px;
+}
+.answer-wrapper{
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 0 10px lightgray;
+    padding: 15px;
+    border-radius: 10px 10px 10px 0;
+}
+.question-page-icon1{
+    font-size: 5rem;
+    color: lightgray;
+}
+.question-content-container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: right;
+    margin-top: 20px;
+}
+.question-content-wrapper{
+    padding: 10px;
+    width: 100%;
+    max-width: 650px;
+    /* border: 1px solid lightgray; */
+    box-shadow: 0 0 8px lightgray;
+    border-radius: 9px 9px 0 9px;
+}
+.question-main-input-container{
+    position: absolute;
+    /* left: 280px; */
+    /* right: 0; */
+    bottom: 20px;
+    width: 96%;
+    margin-top: 20px;
+}
+.question-input-container{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.question-input-container .question-input{
+    width: 100%;
+}
+.question-input input{
+    width: 96%;
+    height: 40px;
+    border:1px solid lightgray ;
+    border-radius: 15px;
+    outline: none;
+    text-indent: 15px;
+    z-index: 0;
+}
+.send-question-button button{
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius:15px ;
+    outline: none;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    width:100px;
+    cursor: pointer;
+    z-index: 0;
+}
+@media screen and (max-width: 400px) {
+    .question-page-container{
+        padding: 10px;
+    }
+    .send-question-button button{
+        width: 80px;
+    }
+}
