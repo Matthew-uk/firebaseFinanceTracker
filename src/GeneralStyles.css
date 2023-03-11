@@ -5,6 +5,7 @@
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  font-family: Sansita;
 }
 :root {
   --primary-color: #1127e3;

@@ -1,0 +1,76 @@
+:root {
+  --gradient: linear-gradient(to right, #5dcadb 0%, #bc52c6 51%, #e04cb6 100%);
+  --gradient-hover: linear-gradient(to right,#e04cb6 0%, #bc52c6 51%, #5dcadb 100%);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--primary-gradient);
+}
+
+.login .login-card {
+  padding: 2em;
+  height: 50vh;
+  background: #fff;
+  border-radius: 8px;
+  width: 450px;
+  margin-inline: 2em;
+}
+
+.login-card > div {
+  display: flex;
+  padding: 1em 0em;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.login-card > div label {
+  font-size: 0.85em;
+}
+
+.login-card > div input {
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 5px 0;
+  background-color: #fff!important;
+}
+
+.login-card > div input:focus {
+  outline: none;
+}
+
+.login-card button {
+  border-radius: 20px;
+  width: 100%;
+  border: none;
+  background: var(--gradient);
+  padding-block: 0.8em;
+  margin-top: 0.5em;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  transition: all 1s ease-out;
+}
+
+.login-card button:hover {
+  background: var(--gradient-hover);
+}
+
+.forgot {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end!important;
+  text-align: right;
+  font-size: 0.7em;
+  padding: 0.5em 0!important;
+  color: var(--primary-color);
+}
+
+.forgot p {
+  cursor: pointer;
+}

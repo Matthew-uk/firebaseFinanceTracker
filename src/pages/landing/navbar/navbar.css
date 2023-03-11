@@ -1,0 +1,178 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+  z-index: 20;
+  box-shadow: 0px 0px 5px rgb(148, 146, 146);
+  height: 60px;
+}
+
+.navbar .nav-logo h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  display: none;
+}
+
+.navbar .nav-links ul li {
+  padding: 0 35px;
+  list-style-type: none;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.navbar .nav-links ul li button {
+  margin-right: 0;
+}
+
+.navbar .wallet .scroll > div{
+  border: 1px solid aliceblue !important;
+}
+
+.navbar .wallet .mobile-menu[data-visible="true"] > div:nth-child(1) {
+  width: 40px;
+  transform: rotate(45deg);
+  border: 1px solid aliceblue;
+}
+
+.navbar .wallet .mobile-menu[data-visible="true"] > div:nth-child(2) {
+  width: 40px;
+  margin-top: -2px;
+  transform: rotate(135deg);
+  border: 1px solid aliceblue;
+}
+
+.navbar .wallet .mobile-menu[data-visible="true"] > div:nth-child(3) {
+  display: none;
+}
+
+.navbar .wallet .mobile-menu > div:nth-child(1) {
+  width: 35px;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar .wallet .mobile-menu > div:nth-child(2) {
+  width: 25px;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar .wallet .mobile-menu > div:nth-child(3) {
+  width: 15px;
+}
+
+/* .navbar .nav-links ul li[data-visible="false"] .wallet {
+  display: none;
+  border: 1px solid red;
+} */
+
+.scrolled .nav-links .wallet {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .wallet {
+  display: flex;
+  flex-direction: row;
+  transition: all 0.4s ease-in-out;
+}
+
+.wallet button {
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 40px;
+  background: var(--primary-color);
+  cursor: pointer;
+  color: aliceblue;
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
+.navbar .wallet .mobile-menu {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+.navbar .wallet .mobile-menu > div{
+  border: 1px solid #000;
+  margin-top: 4px;
+}
+
+.navbar .wallet .mobile-menu > div:nth-child(1) {
+  width: 35px;
+}
+
+.navbar .wallet .mobile-menu > div:nth-child(2) {
+  width: 25px;
+}
+
+.navbar .wallet .mobile-menu > div:nth-child(3) {
+  width: 15px;
+}
+
+.navbar .nav-links {
+  overflow-x: hidden;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background: #333;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar .nav-links[data-visible="false"] {
+  transform: translateY(-2000px);
+}
+
+.navbar .nav-links ul {
+  flex-direction: column;
+  display: flex;
+}
+
+.navbar .nav-links ul li {
+  padding-block: 2em;
+}
+
+.scrolled {
+  transition: all 0.4s ease-in-out;
+  padding-block: 5px;
+  background: #020817eb;
+  padding-top: 5px;
+  color: aliceblue;
+}
+
+.scrolled .mobile-menu div{
+  border: 1px solid aliceblue;
+  background: aliceblue;
+}
+
+.scrolled .wallet {
+  transition: all.4s ease-in-out;
+  padding-right: 5px;
+}
