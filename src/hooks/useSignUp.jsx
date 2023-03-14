@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { projectAuth } from "../firebase/config";
+import { useAuthContext } from "./useAuthContext";
 
 export const useSignUp = () => {
   const [error, setError] = useState(null);
   const [isPending, setPending] = useState(false);
+  const { dispatch } = useAuthContext();
+  const [newUser, setNewUser] = useState(null);
 
   const signUp = async (email, password, displayName) => {
     setError(null);
@@ -15,13 +18,17 @@ export const useSignUp = () => {
         email,
         password
       );
-      console.log(res.user);
       if (!res) {
         throw new Error("Could not Sign Up for some unseen reasons...:(");
       }
 
       //Add display name
       await res.user.updateProfile({ displayName });
+      setNewUser(res.user);
+      console.log(newUser);
+
+      //Log user in
+      dispatch({ type: "LOGIN", payload: res.user });
       setPending(false);
       setError(null);
     } catch (err) {
@@ -31,5 +38,5 @@ export const useSignUp = () => {
     }
   };
 
-  return { signUp, error, isPending };
+  return { signUp, error, isPending, newUser };
 };

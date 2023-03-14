@@ -3,7 +3,7 @@
   --gradient-hover: linear-gradient(to right,#e04cb6 0%, #bc52c6 51%, #5dcadb 100%);
 }
 
-.login {
+.signUp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   background: var(--primary-gradient);
 }
 
-.login .login-card {
+.signUp .signUp-card {
   padding: 2em;
   min-height: 55vh;
   background: #fff;
@@ -21,18 +21,18 @@
   margin-inline: 2em;
 }
 
-.login-card > div {
+.signUp-card > div {
   display: flex;
   padding: 1em 0em;
   align-items: flex-start;
   flex-direction: column;
 }
 
-.login-card > div label {
+.signUp-card > div label {
   font-size: 0.85em;
 }
 
-.login-card > div input {
+.signUp-card > div input {
   border: none;
   border-bottom: 1px solid rgba(0,0,0,0.6);
   width: 100%;
@@ -40,11 +40,11 @@
   background-color: #fff!important;
 }
 
-.login-card > div input:focus {
+.signUp-card > div input:focus {
   outline: none;
 }
 
-.login-card button {
+.signUp-card button {
   border-radius: 20px;
   width: 100%;
   border: none;
@@ -57,7 +57,7 @@
   transition: all 1s ease-out;
 }
 
-.login-card button:hover {
+.signUp-card button:hover {
   background: var(--gradient-hover);
 }
 

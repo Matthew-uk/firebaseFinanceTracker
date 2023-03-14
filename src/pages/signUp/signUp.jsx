@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Nav from "../../components/navbar/nav";
 import { useSignUp } from "../../hooks/useSignUp";
 import "./signUp.css";
 
@@ -14,46 +15,51 @@ export default function SignUp() {
   };
 
   return (
-    <form onSubmit={handleSignUp}>
-      <div className="login">
-        <div className="login-card">
-          <div className="fullName">
-            <label>Full Name</label>
-            <input
-              type="text"
-              onChange={(e) => {
-                setFullName(e.target.value);
-              }}
-              value={fullName}
-            />
+    <div>
+      <Nav />
+      <form onSubmit={handleSignUp}>
+        <div className="signUp">
+          <div className="signUp-card">
+            <div className="fullName">
+              <label>Full Name</label>
+              <input
+                type="text"
+                onChange={(e) => {
+                  setFullName(e.target.value);
+                }}
+                value={fullName}
+              />
+            </div>
+            <div className="username">
+              <label>Email</label>
+              <input
+                type="email"
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+                value={email}
+              />
+            </div>
+            <div className="password">
+              <label>Password</label>
+              <input
+                type="password"
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                }}
+                value={password}
+              />
+            </div>
+            <div className="forgot">
+              <p>Forgot Password?</p>
+            </div>
+            <button disabled={isPending}>
+              {isPending ? "Loading..." : "Sign Up"}
+            </button>
+            {error && <p style={{ color: "red" }}>{error}</p>}
           </div>
-          <div className="username">
-            <label>Email</label>
-            <input
-              type="email"
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              value={email}
-            />
-          </div>
-          <div className="password">
-            <label>Password</label>
-            <input
-              type="password"
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
-              value={password}
-            />
-          </div>
-          <div className="forgot">
-            <p>Forgot Password?</p>
-          </div>
-          <button disabled={isPending}>{isPending ? "Loading..." : "LOGIN"}</button>
-          {error && <p style={{color: 'red'}}>{error}</p>}
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   );
 }
