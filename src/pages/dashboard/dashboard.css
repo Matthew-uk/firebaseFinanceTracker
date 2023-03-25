@@ -1,0 +1,26 @@
+.dashboard {
+  background: var(--primary-gradient);
+  height: 100vh;
+}
+
+.dashboard .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em;
+}
+
+.dashboard .container div {
+  width: 100%;
+}
+
+.transactionForm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 800px) {
+  .dashboard .container {
+    flex-direction: column-reverse;
+  }
+}

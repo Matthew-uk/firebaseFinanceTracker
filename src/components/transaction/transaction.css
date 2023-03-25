@@ -1,0 +1,49 @@
+.transactionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: aliceblue;
+  height: 100%;
+  width: 80% !important;
+}
+
+.transactionBox {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(81, 118, 151, 0.5);
+  padding: 2.5em 0.5em;
+  width: 80% !important;
+  margin-top: 0.6em;
+}
+
+.transactionBox input {
+  height: 4vh;
+  outline: none;
+  border-radius: 14px;
+  border: none;
+  padding: 1em;
+}
+
+.transactionBox label {
+  margin-block: 0.5em;
+}
+
+button {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 20px;
+  border: none;
+  background: greenyellow;
+  color: rgb(31, 154, 113);
+}
+
+@media screen and (max-width: 800px) {
+  .transactionContainer {
+    width: 100% !important;
+  }
+  .transactionBox {
+    width: 100% !important;
+  }
+}

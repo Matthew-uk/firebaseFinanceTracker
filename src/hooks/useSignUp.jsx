@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { projectAuth } from "../firebase/config";
+import { projectAuth, projectFireStore, timeStamp } from "../firebase/config";
 import { useAuthContext } from "./useAuthContext";
 
 export const useSignUp = () => {
@@ -26,6 +26,17 @@ export const useSignUp = () => {
       await res.user.updateProfile({ displayName });
       setNewUser(res.user);
       console.log(newUser);
+
+      //Store the user
+      const createdAt = timeStamp.fromDate(new Date());
+      let user = {
+        displayName,
+        email,
+        password,
+        createdAt,
+      };
+      projectFireStore.collection("users").add({ ...user, createdAt });
+      console.log("User Created at", createdAt);
 
       //Log user in
       dispatch({ type: "LOGIN", payload: res.user });

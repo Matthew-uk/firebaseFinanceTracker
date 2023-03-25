@@ -21,12 +21,12 @@ export default function Nav() {
         </div>
         <div className="nav-btns">
           {user ? (
-            <>
-              <p>{user.displayName}</p>
+            <div className="userName">
+              <p>{`Hello 👋🏽, ${user.displayName}`}</p>
               <button onClick={handleLogout}>
                 {isPending ? "Logging Out" : "Log Out"}
               </button>
-            </>
+            </div>
           ) : (
             <>
               <Link to="/signup">

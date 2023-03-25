@@ -1,7 +1,7 @@
 .loginNavbar {
-  position: fixed;
   width: 100%;
-  padding-inline: 1em;
+  padding: 1em;
+  position: absolute;
 }
 
 .loginNavbar .nav {
@@ -13,24 +13,25 @@
   height: 100%;
   width: 100%;
   border-radius: 3em;
-  padding: 1em;
-  margin-top: 1em;
+  padding: 0.8em;
 }
 
-.loginNavbar .nav-logo h2{
+.loginNavbar .nav-logo h2 {
   font-size: 1.5em;
   cursor: pointer;
   text-decoration: none;
 }
 
-/* .nav-btns {
-  border: 1px solid red; */
-  /* padding: 0.3em; */
-/* } */
+.nav-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
 
 .nav-btns button {
-  border: none;
-  margin-inline: 0.5em;
+  margin-inline: 0.4em;
   padding: 0.5em 1em;
   border-radius: 10px;
   background: none;
@@ -40,4 +41,10 @@
 
 .no-decoration {
   text-decoration: none;
+}
+
+.userName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
