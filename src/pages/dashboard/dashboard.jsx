@@ -9,13 +9,21 @@ import "./dashboard.css";
 const Dashboard = () => {
   const { user } = useAuthContext();
   const { docs } = useCollection("Transactions");
+  const filteredDocs = docs.filter((doc) => doc.uid === user.uid);
+
   return (
     <div className="dashboard">
       <Nav />
       <div className="container">
         <div className="transactionList">
           <div className="transactionListBox">
-            {docs && docs.map((doc) => <TransactionList doc={doc} />)}
+            {
+              docs &&
+                filteredDocs.map((doc) => (
+                  <TransactionList key={doc.id} doc={doc} />
+                ))
+              // docs.map((doc) => <TransactionList key={doc.id} doc={doc} />)
+            }
           </div>
         </div>
         <div className="transactionForm">

@@ -9,6 +9,8 @@ const fireStoreReducer = (state, action) => {
   switch (action.type) {
     case "ADD_DOCUMENT":
       return { ...state, document: action.payload };
+    // case (action.type === "DELETE_DOCUMENT"):
+    //   return {...state}
     default:
       return state;
   }

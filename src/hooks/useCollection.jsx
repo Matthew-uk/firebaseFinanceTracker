@@ -16,6 +16,7 @@ export const useCollection = (collection) => {
         }));
         setDocs(data);
         console.log(docs);
+        data.forEach((doc) => console.log(doc.uid));
       },
       (err) => {
         setError(err);
@@ -25,25 +26,5 @@ export const useCollection = (collection) => {
     return unsubcribe;
   }, [collection]);
 
-  // useEffect(() => {
-  //   const ref = projectFireStore.collection(collection);
-  //   const unsubcribe = ref.onSnapshot(
-  //     (snapshot) => {
-  //       let result = [];
-  //       snapshot.docs.forEach((doc) => {
-  //         result.push({ ...doc.data(), id: doc.id });
-  //       });
-  //       setDocs(result);
-  //       setError(null);
-  //     },
-  //     (error) => {
-  //       console.log(error.message);
-  //       setError("Could not fetch data");
-  //     }
-  //   );
-  //   return () => {
-  //     unsubcribe();
-  //   };
-  // }, [collection]);
   return { docs };
 };
