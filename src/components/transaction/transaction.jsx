@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+// import { useCollection } from "../../hooks/useCollection";
 import { useFirestore } from "../../hooks/useFirestore";
 import "./transaction.css";
 
 const Transaction = ({ user }) => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState(0);
+  // const [addCount, setAddCount] = useState(0);
   const { addDocument } = useFirestore();
+  // const { increment } = useCollection("Transactions");
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTransaction = {
@@ -16,6 +19,10 @@ const Transaction = ({ user }) => {
     addDocument(newTransaction);
     setTitle("");
     setAmount("");
+    // setAddCount((prevState) => prevState + 1);
+    // console.log(addCount);
+    // increment();
+    // console.log(docs);
   };
   return (
     <div className="transactionContainer">

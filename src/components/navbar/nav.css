@@ -1,13 +1,13 @@
 .loginNavbar {
   width: 100%;
   padding: 1em;
-  position: absolute;
+  background: transparent;
 }
 
 .loginNavbar .nav {
   display: flex;
   flex-direction: row;
-  background: #fff;
+  background: aliceblue;
   justify-content: space-between;
   align-items: center;
   height: 100%;
