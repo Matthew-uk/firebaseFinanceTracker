@@ -15,8 +15,6 @@ export const useCollection = (collection) => {
           ...doc.data(),
         }));
         setDocs(data);
-        console.log(docs);
-        data.forEach((doc) => console.log(doc.uid));
       },
       (err) => {
         setError(err);

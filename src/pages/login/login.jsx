@@ -14,7 +14,7 @@ export default function Login() {
     login(email, password);
   };
   return (
-    <div>
+    <div className="login-container">
       <Nav />
       <form onSubmit={handleLogin}>
         <div className="login">

@@ -1,6 +1,6 @@
 .dashboard {
   background: var(--primary-gradient);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .dashboard .container {
@@ -22,5 +22,9 @@
 @media screen and (max-width: 800px) {
   .dashboard .container {
     flex-direction: column-reverse;
+  }
+
+  .transactionListBox {
+    margin-top: 1em;
   }
 }
