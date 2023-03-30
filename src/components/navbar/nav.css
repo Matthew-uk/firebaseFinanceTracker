@@ -1,7 +1,7 @@
 .loginNavbar {
   width: 100%;
   padding: 1em;
-  position: fixed;
+  background: transparent;
 }
 
 .loginNavbar .nav {

@@ -45,6 +45,10 @@
   color: #fff;
 }
 
+.login-card > div input::placeholder {
+  color: aliceblue;
+}
+
 .login-card > div input:focus {
   outline: none;
 }

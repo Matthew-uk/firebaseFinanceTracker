@@ -15,7 +15,7 @@ export default function SignUp() {
   };
 
   return (
-    <div>
+    <div className="signUpContainer">
       <Nav />
       <form onSubmit={handleSignUp}>
         <div className="signUp">
@@ -28,6 +28,7 @@ export default function SignUp() {
                   setFullName(e.target.value);
                 }}
                 value={fullName}
+                placeholder="Enter Full name..."
               />
             </div>
             <div className="username">
@@ -38,6 +39,7 @@ export default function SignUp() {
                   setEmail(e.target.value);
                 }}
                 value={email}
+                placeholder="Enter Email..."
               />
             </div>
             <div className="password">
@@ -48,6 +50,7 @@ export default function SignUp() {
                   setPassword(e.target.value);
                 }}
                 value={password}
+                placeholder="Enter Password..."
               />
             </div>
             <div className="forgot">
