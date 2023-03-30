@@ -31,5 +31,5 @@ export const useCollection = (collection) => {
     return unsubcribe();
   }, [collection]);
 
-  return { docs, isPending };
+  return { docs, isPending, error };
 };

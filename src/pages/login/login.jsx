@@ -27,6 +27,7 @@ export default function Login() {
                   setEmail(e.target.value);
                 }}
                 value={email}
+                placeholder="Enter your email address..."
               />
             </div>
             <div className="password">
@@ -37,6 +38,7 @@ export default function Login() {
                   setPassword(e.target.value);
                 }}
                 value={password}
+                placeholder="Enter your password..."
               />
             </div>
             <div className="forgot">

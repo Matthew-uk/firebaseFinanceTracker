@@ -2,7 +2,7 @@
 
 import React from "react";
 // React packages
-import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Loading } from "./components/loading/loading";
 // General Styles
 import "./GeneralStyles.css";
