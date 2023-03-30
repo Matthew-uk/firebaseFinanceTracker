@@ -24,7 +24,7 @@ export const useCollection = (collection) => {
         },
         (err) => {
           setError(err);
-          console.log("This is error from use Collection: ", err);
+          console.log("This is error from use Collection:  ", err);
         }
       );
     };
