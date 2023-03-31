@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './navbar.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
-export default function Navbar({navBtn, handleMobileMenu}) {
+export default function Navbar({ navBtn, handleMobileMenu }) {
   return (
     <div className="navbar">
       <div className="nav-logo">
@@ -17,20 +17,23 @@ export default function Navbar({navBtn, handleMobileMenu}) {
           <li>Partners</li>
           <li>FAQs</li>
           <li>Mining</li>
-          <li>Reviews</li>
+          <li>Our Reviews</li>
         </ul>
       </div>
       <div className="wallet">
-        <Link to='/signup'><button>Get Started</button></Link>
+        <Link to="/signup">
+          <button>Get Started</button>
+        </Link>
         <div
           onClick={handleMobileMenu}
           className="mobile-menu"
-          data-visible={navBtn}>
+          data-visible={navBtn}
+        >
           <div></div>
           <div></div>
           <div></div>
         </div>
       </div>
     </div>
-  )
+  );
 }
