@@ -24,6 +24,7 @@ export default function SignUp() {
               <label>Full Name</label>
               <input
                 type="text"
+                name="name"
                 onChange={(e) => {
                   setFullName(e.target.value);
                 }}
@@ -35,6 +36,7 @@ export default function SignUp() {
               <label>Email</label>
               <input
                 type="email"
+                name="email"
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
@@ -46,6 +48,7 @@ export default function SignUp() {
               <label>Password</label>
               <input
                 type="password"
+                name="password"
                 onChange={(e) => {
                   setPassword(e.target.value);
                 }}
